@@ -39,12 +39,12 @@
 		897E8F051D9C2C4200216944 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		897E8F071D9C2C4200216944 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		897E8F081D9C2C4200216944 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		897E8F0A1D9C2C4200216944 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		897E8F0B1D9C2C4200216944 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		897E8F0A1D9C2C4200216944 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Prototype/ViewController.h; sourceTree = "<group>"; };
+		897E8F0B1D9C2C4200216944 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Prototype/ViewController.m; sourceTree = "<group>"; };
 		897E8F0E1D9C2C4200216944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		897E8F101D9C2C4200216944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		897E8F101D9C2C4200216944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Prototype/Assets.xcassets; sourceTree = "<group>"; };
 		897E8F131D9C2C4200216944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		897E8F151D9C2C4200216944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897E8F151D9C2C4200216944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Prototype/Info.plist; sourceTree = "<group>"; };
 		897E8F1A1D9C2C4200216944 /* PrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897E8F1E1D9C2C4200216944 /* PrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeTests.m; sourceTree = "<group>"; };
 		897E8F201D9C2C4200216944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +81,10 @@
 		897E8EF81D9C2C4200216944 = {
 			isa = PBXGroup;
 			children = (
+				897E8F3B1D9C305A00216944 /* View Controllers */,
+				897E8F3A1D9C305300216944 /* Models */,
+				897E8F391D9C303600216944 /* Storyboards */,
+				897E8F381D9C302B00216944 /* Utilities */,
 				897E8F031D9C2C4200216944 /* Prototype */,
 				897E8F1D1D9C2C4200216944 /* PrototypeTests */,
 				897E8F281D9C2C4200216944 /* PrototypeUITests */,
@@ -103,13 +107,6 @@
 			children = (
 				897E8F071D9C2C4200216944 /* AppDelegate.h */,
 				897E8F081D9C2C4200216944 /* AppDelegate.m */,
-				897E8F0A1D9C2C4200216944 /* ViewController.h */,
-				897E8F0B1D9C2C4200216944 /* ViewController.m */,
-				897E8F0D1D9C2C4200216944 /* Main.storyboard */,
-				897E8F101D9C2C4200216944 /* Assets.xcassets */,
-				897E8F121D9C2C4200216944 /* LaunchScreen.storyboard */,
-				897E8F151D9C2C4200216944 /* Info.plist */,
-				897E8F041D9C2C4200216944 /* Supporting Files */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -120,6 +117,7 @@
 				897E8F051D9C2C4200216944 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 		897E8F1D1D9C2C4200216944 /* PrototypeTests */ = {
@@ -138,6 +136,41 @@
 				897E8F2B1D9C2C4200216944 /* Info.plist */,
 			);
 			path = PrototypeUITests;
+			sourceTree = "<group>";
+		};
+		897E8F381D9C302B00216944 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		897E8F391D9C303600216944 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				897E8F0D1D9C2C4200216944 /* Main.storyboard */,
+				897E8F101D9C2C4200216944 /* Assets.xcassets */,
+				897E8F121D9C2C4200216944 /* LaunchScreen.storyboard */,
+				897E8F151D9C2C4200216944 /* Info.plist */,
+				897E8F041D9C2C4200216944 /* Supporting Files */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		897E8F3A1D9C305300216944 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		897E8F3B1D9C305A00216944 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				897E8F0A1D9C2C4200216944 /* ViewController.h */,
+				897E8F0B1D9C2C4200216944 /* ViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +350,7 @@
 				897E8F0E1D9C2C4200216944 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 		897E8F121D9C2C4200216944 /* LaunchScreen.storyboard */ = {
@@ -325,6 +359,7 @@
 				897E8F131D9C2C4200216944 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
