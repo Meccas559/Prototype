@@ -37,8 +37,8 @@
 /* Begin PBXFileReference section */
 		897E8F011D9C2C4200216944 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897E8F051D9C2C4200216944 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		897E8F071D9C2C4200216944 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		897E8F081D9C2C4200216944 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		897E8F071D9C2C4200216944 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Prototype/AppDelegate.h; sourceTree = "<group>"; };
+		897E8F081D9C2C4200216944 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Prototype/AppDelegate.m; sourceTree = "<group>"; };
 		897E8F0A1D9C2C4200216944 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Prototype/ViewController.h; sourceTree = "<group>"; };
 		897E8F0B1D9C2C4200216944 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Prototype/ViewController.m; sourceTree = "<group>"; };
 		897E8F0E1D9C2C4200216944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,11 +81,12 @@
 		897E8EF81D9C2C4200216944 = {
 			isa = PBXGroup;
 			children = (
+				897E8F071D9C2C4200216944 /* AppDelegate.h */,
+				897E8F081D9C2C4200216944 /* AppDelegate.m */,
 				897E8F3B1D9C305A00216944 /* View Controllers */,
 				897E8F3A1D9C305300216944 /* Models */,
 				897E8F391D9C303600216944 /* Storyboards */,
 				897E8F381D9C302B00216944 /* Utilities */,
-				897E8F031D9C2C4200216944 /* Prototype */,
 				897E8F1D1D9C2C4200216944 /* PrototypeTests */,
 				897E8F281D9C2C4200216944 /* PrototypeUITests */,
 				897E8F021D9C2C4200216944 /* Products */,
@@ -100,15 +101,6 @@
 				897E8F251D9C2C4200216944 /* PrototypeUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		897E8F031D9C2C4200216944 /* Prototype */ = {
-			isa = PBXGroup;
-			children = (
-				897E8F071D9C2C4200216944 /* AppDelegate.h */,
-				897E8F081D9C2C4200216944 /* AppDelegate.m */,
-			);
-			path = Prototype;
 			sourceTree = "<group>";
 		};
 		897E8F041D9C2C4200216944 /* Supporting Files */ = {
