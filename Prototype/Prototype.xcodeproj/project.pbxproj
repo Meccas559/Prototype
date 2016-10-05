@@ -21,6 +21,7 @@
 		897E8F441D9C41FA00216944 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E8F431D9C41FA00216944 /* MessageUI.framework */; };
 		89C583271DA43141000D5200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C583261DA43141000D5200 /* MapKit.framework */; };
 		89C583291DA4314D000D5200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C583281DA4314D000D5200 /* MapKit.framework */; };
+		89C5832C1DA4349B000D5200 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5832B1DA4349B000D5200 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		897E8F431D9C41FA00216944 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		89C583261DA43141000D5200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		89C583281DA4314D000D5200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		89C5832A1DA4349B000D5200 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = Prototype/SearchViewController.h; sourceTree = "<group>"; };
+		89C5832B1DA4349B000D5200 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = Prototype/SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 			children = (
 				897E8F0A1D9C2C4200216944 /* ViewController.h */,
 				897E8F0B1D9C2C4200216944 /* ViewController.m */,
+				89C5832A1DA4349B000D5200 /* SearchViewController.h */,
+				89C5832B1DA4349B000D5200 /* SearchViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			files = (
 				897E8F0C1D9C2C4200216944 /* ViewController.m in Sources */,
 				897E8F091D9C2C4200216944 /* AppDelegate.m in Sources */,
+				89C5832C1DA4349B000D5200 /* SearchViewController.m in Sources */,
 				897E8F061D9C2C4200216944 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
