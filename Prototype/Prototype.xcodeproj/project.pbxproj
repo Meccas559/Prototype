@@ -18,10 +18,9 @@
 		897E8F3E1D9C371300216944 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E8F3D1D9C371300216944 /* MessageUI.framework */; };
 		897E8F401D9C3DDC00216944 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E8F3F1D9C3DDC00216944 /* CFNetwork.framework */; };
 		897E8F421D9C41E100216944 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E8F411D9C41E100216944 /* Messages.framework */; };
-		897E8F441D9C41FA00216944 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E8F431D9C41FA00216944 /* MessageUI.framework */; };
 		89C583271DA43141000D5200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C583261DA43141000D5200 /* MapKit.framework */; };
-		89C583291DA4314D000D5200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C583281DA4314D000D5200 /* MapKit.framework */; };
 		89C5832C1DA4349B000D5200 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5832B1DA4349B000D5200 /* SearchViewController.m */; };
+		89C5832E1DA58940000D5200 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C5832D1DA58940000D5200 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +60,10 @@
 		897E8F3D1D9C371300216944 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		897E8F3F1D9C3DDC00216944 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		897E8F411D9C41E100216944 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		897E8F431D9C41FA00216944 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		89C583261DA43141000D5200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		89C583281DA4314D000D5200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		89C5832A1DA4349B000D5200 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = Prototype/SearchViewController.h; sourceTree = "<group>"; };
 		89C5832B1DA4349B000D5200 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = Prototype/SearchViewController.m; sourceTree = "<group>"; };
+		89C5832D1DA58940000D5200 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C5832E1DA58940000D5200 /* CoreLocation.framework in Frameworks */,
 				89C583271DA43141000D5200 /* MapKit.framework in Frameworks */,
 				897E8F421D9C41E100216944 /* Messages.framework in Frameworks */,
 				897E8F401D9C3DDC00216944 /* CFNetwork.framework in Frameworks */,
-				897E8F441D9C41FA00216944 /* MessageUI.framework in Frameworks */,
-				89C583291DA4314D000D5200 /* MapKit.framework in Frameworks */,
 				897E8F3E1D9C371300216944 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,8 +99,6 @@
 		897E8EF81D9C2C4200216944 = {
 			isa = PBXGroup;
 			children = (
-				89C583281DA4314D000D5200 /* MapKit.framework */,
-				897E8F431D9C41FA00216944 /* MessageUI.framework */,
 				897E8F071D9C2C4200216944 /* AppDelegate.h */,
 				897E8F081D9C2C4200216944 /* AppDelegate.m */,
 				897E8F3B1D9C305A00216944 /* View Controllers */,
@@ -194,6 +189,7 @@
 		897E8F3C1D9C371300216944 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89C5832D1DA58940000D5200 /* CoreLocation.framework */,
 				89C583261DA43141000D5200 /* MapKit.framework */,
 				897E8F411D9C41E100216944 /* Messages.framework */,
 				897E8F3F1D9C3DDC00216944 /* CFNetwork.framework */,

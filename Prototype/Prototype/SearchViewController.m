@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import <CoreLocation/CoreLocation.h>
+
 #define METERS_PER_MILE 1609.344
 
 
@@ -25,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Locates Authorizes and Runs locationmanager object
     self.locationManager = [[CLLocationManager alloc] init];
     [self.locationManager setDelegate:self];
     
@@ -56,6 +57,19 @@
         _mapView.showsUserLocation = YES;
         NSLog(@"Location manager is successful");
         
+        // Set current coordinates
+        
+        _zoomLocation.latitude = _currentLocal.latitude;
+        _zoomLocation.longitude= _currentLocal.longitude;
+        
+        // Allocate viewRegion with Coordinates
+        MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(_zoomLocation, 0.9*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+        
+        // Set viewRegion to mapView
+        [_mapView setRegion:viewRegion animated:YES];
+        _mapView.zoomEnabled = YES;
+        
+        
     } else if (status == kCLAuthorizationStatusDenied) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location services not authorized"
                                                         message:@"This app needs you to authorize locations services to work."
@@ -73,9 +87,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     // 1
+    // _currentLocal.latitude
+    // _currentLocal.longitude
     
-    _zoomLocation.latitude = 40.7914;
-    _zoomLocation.longitude= -77.8586;
+     _zoomLocation.latitude = _currentLocal.latitude;
+     _zoomLocation.longitude= _currentLocal.longitude;
+    //_zoomLocation.latitude = 33.7489950;
+    //_zoomLocation.longitude= -84.3879820;
     
     // 2
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(_zoomLocation, 0.9*METERS_PER_MILE, 0.5*METERS_PER_MILE);
